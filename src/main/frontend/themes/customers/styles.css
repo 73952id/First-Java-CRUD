@@ -1,0 +1,25 @@
+html {
+  --lumo-primary-color: #236451;
+  --lumo-primary-text-color: #236451;
+  --lumo-base-color: #ffffff;
+  --lumo-body-text-color: #253b35;
+  --lumo-border-radius-m: 8px;
+  background: #f5f6f2;
+}
+.customer-page { max-width: 1160px; margin: 44px auto; padding: 28px; gap: 18px; }
+.eyebrow { color: #236451; letter-spacing: .16em; font-size: 12px; font-weight: 700; }
+.customer-page h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.3rem); letter-spacing: -.04em; }
+.customer-page h2 { margin: 0; font-size: 1.25rem; }
+.customer-page p { margin: 0; color: #6c7a73; }
+.toolbar { margin-top: 16px; gap: 20px; }
+.toolbar vaadin-text-field { max-width: 380px; }
+.toolbar span { color: #6c7a73; font-size: 13px; white-space: nowrap; }
+vaadin-grid { border-radius: 12px; border-color: #dce3dc; }
+.editor { padding: 26px; background: white; border: 1px solid #dce3dc; border-radius: 12px; }
+.editor > vaadin-horizontal-layout { flex-wrap: wrap; gap: 12px; }
+@media (max-width: 650px) {
+  .customer-page { margin: 0; padding: 18px; }
+  .toolbar { flex-wrap: wrap; gap: 8px; }
+  .toolbar vaadin-text-field { min-width: 100%; }
+  .editor { padding: 18px; }
+}

@@ -4,3 +4,17 @@
 .idea/
 .vscode/
 *.iml
+/target/
+/node_modules/
+/src/main/frontend/generated/
+/src/main/frontend/index.html
+/package.json
+/package-lock.json
+/pnpm-lock.yaml
+/pnpmfile.cjs
+/vite.config.ts
+/vite.generated.ts
+/tsconfig.json
+/types.d.ts
+*.log
+.DS_Store

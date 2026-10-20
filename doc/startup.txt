@@ -1,0 +1,6 @@
+2026-10-20T18:17:53.396+02:00  INFO 16374 --- [first-java-crud] [           main] p.e.v.customers.CustomerApplication      : Starting CustomerApplication using Java 21.0.12.1 with PID 16374 (/home/maryl/uni/team_proj/3d_lab/First-Java-CRUD/target/classes started by maryl in /home/maryl/uni/team_proj/3d_lab/First-Java-CRUD)
+2026-10-20T18:17:57.585+02:00  INFO 16374 --- [first-java-crud] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-10-20T18:18:02.977+02:00  INFO 16374 --- [first-java-crud] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-20T18:18:14.745+02:00  INFO 16374 --- [first-java-crud] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-10-20T18:18:14.771+02:00  INFO 16374 --- [first-java-crud] [           main] p.e.v.customers.CustomerApplication      : Started CustomerApplication in 22.592 seconds (process running for 23.378)
+2026-10-20T18:18:15.939+02:00  INFO 16374 --- [first-java-crud] [           main] c.v.b.d.DevModeHandlerManagerImpl        : Application running at http://localhost:8080/
