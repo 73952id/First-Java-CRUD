@@ -147,7 +147,16 @@ public class CustomerApp {
                         case "2" -> create();
                         case "3" -> change(false);
                         case "4" -> change(true);
-                        case "0" -> { System.out.println("Goodbye!"); return; }
+                        case "0" -> {
+                            String answer = ask("Are you sure you want to exit? (yes/no): ");
+                            if (answer.equalsIgnoreCase("yes")) {
+                                System.out.println("Goodbye!");
+                                return;
+                            }
+                            if (!answer.equalsIgnoreCase("no")) {
+                                System.out.println("Please answer yes or no. Returning to the menu.");
+                            }
+                        }
                         default -> System.out.println("Choose 0, 1, 2, 3 or 4.");
                     }
                 } catch (IOException e) {

@@ -36,12 +36,15 @@ Git. This is a learning exercise; email checking only validates a basic format.
 2. Choose **1** to see the new customer and its ID.
 3. Choose **3**, enter that ID, then a new name and email.
 4. Choose **1** to check the updated record.
-5. Exit with **0** and restart to check persistence.
+5. Exit with **0**, confirm with `yes`, and restart to check persistence.
 6. Choose **4**, enter the ID, and type `yes` to delete it.
 7. Choose **1** to verify that it was removed.
 
 Invalid menu choices, missing IDs, blank fields, invalid email formats, and
 cancelled deletions are handled without terminating the application.
+
+Choosing **0** asks for exit confirmation. Enter `yes` (case-insensitive) to exit;
+`no` or any other answer returns to the menu. Invalid answers show a short message.
 
 ## Project structure
 
