@@ -1,28 +1,39 @@
 # Assignment evidence
 
-Add real screenshots here after running the app and completing pair work.
-This file is guidance, not evidence that the assignment has been completed.
+Store real screenshots here. Never substitute generated mockups for running-app evidence.
 
-Suggested files:
+The six screenshots below were captured on 20 October 2026. Application captures
+come from Chromium connected to the running local server. Startup output is a
+browser rendering of actual log lines (also saved verbatim in `startup.txt`),
+not a terminal screenshot. The history capture is the public GitHub commits page.
 
-| File | Capture |
+| File | Required capture |
 | --- | --- |
-| `01-startup.png` | Terminal showing the launch command, successful startup message, and menu. |
-| `02-create-read.png` | Creating a fictional customer and listing the record. |
-| `03-update.png` | Updating the customer and listing the changed values. |
-| `04-delete.png` | Deleting the customer and listing the remaining records. |
-| `05-github-history.png` | GitHub commit history after the partner PR is merged, showing both students' commits. |
+| `01-application.png` | Customer Directory running at localhost:8080. |
+| `02-create.png` | A newly created fictional customer visible in the table. |
+| `03-update.png` | The customer's edited values after saving. |
+| `04-delete.png` | Delete confirmation and/or table after deletion. |
+| `05-startup.png` | Terminal output showing successful Spring Boot startup. |
+| `06-github-history.png` | GitHub main history with both students' commits. |
 
-Keep the text legible and exclude credentials or private customer details. You
-can use your operating system's screenshot tool to capture the terminal and
-browser. The console startup message is the application's startup log.
+The original console app and the partner's merged exit-confirmation change are
+preserved in `legacy/CustomerApp.java`. The main application is now Spring Boot +
+Vaadin. Historical console screenshots, if present, document the earlier version.
 
-Once the files exist:
+Partner contribution to this repository: merged PR #1 (exit confirmation).
+Contribution to partner repository: https://github.com/valeriia73438/First-Java-CRUD/pull/1
+Review/merge of that PR is the partner's responsibility.
 
-```sh
-git add doc
-git commit -m "Add application and collaboration screenshots"
-git push origin main
-```
+## Verification
 
-Check on GitHub that the images render correctly and the repository is public.
+Java 21 compilation and `./mvnw test` passed: **7 tests, 0 failures, 0 errors**.
+Tests cover persistent database CRUD, validation, optional company, startup seed
+idempotence, searching, and discarding unsaved edits.
+
+Actual Chromium checks passed for creating, reading, updating, deleting,
+retaining records after page reload, case-insensitive search, clearing unsaved
+edits, cancelling deletion, and required-field validation. A mobile viewport was
+also inspected. All test-created customer records were removed through the UI.
+
+Submit the repository URL on Platon, not screenshots separately. Verify the
+repository is public and all evidence is committed before submission.
